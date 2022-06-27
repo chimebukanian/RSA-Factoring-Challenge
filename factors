@@ -7,12 +7,12 @@ import os
 
 
 def func_factors(filename):
-    '''Read and find Factorials of every line '''
+    '''Read and find Factorials'''
     with open(filename, 'r') as f:
         for line in f:
             num = int(line)
-            resul = factors(num)
-            print ("{}={}*{}".format(num, int(num / resul), resul))
+            res = factors(num)
+            print ("{}={}*{}".format(num, int(num / res), res))
     f.closed
 
 def factors(x):

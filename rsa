@@ -7,7 +7,7 @@ import os
 
 
 def func_factors(filename):
-    '''Read and find Factorials of every line '''
+    '''Read and find Factorials of lines '''
     with open(filename, 'r') as f:
         for line in f:
             num = int(line)
